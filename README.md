@@ -75,6 +75,17 @@ bin/plugin install /your/local/plugin/logstash-filter-awesome.gem
 ```
 - Start Logstash and proceed to test the plugin
 
+#### 2.3 IAM permissions ####
+The following IAM permissions are required for the plugin to run.
+
+```      
+"Action": [
+  "logs:DescribeLogStreams",
+  "logs:GetLogEvents"
+]
+```
+            
+
 ## Contributing
 
 All contributions are welcome: ideas, patches, documentation, bug reports, complaints, and even something you drew up on a napkin.
